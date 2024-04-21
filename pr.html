@@ -11,18 +11,33 @@
       h1 {
          text-align: center;
          color: white;
-         text-shadow: 2px 2px 10px black;
+         text-shadow: 5px 3px 0px black;
          font-size: 40px;
          font-family: Arial;
          letter-spacing: 2px;
+      }
+      div {
+         position: relative;
+      }
+      div ::after {
+         content: "";
+         width: 80%;
+         height: 5px;
+         position: absolute;
+         bottom: -20px;
+         left: 10%;
+         /* background-color: red; */
+         background-image: linear-gradient(to right, red 50% , white 50%);
       }
       
    </style>
 </head>
 <body>
-   <h1>
-      Hello From  New Branch called Version1 
-   </h1>
-   
+   <div>
+      <h1>
+         Hello From  New Branch called Version1 
+      </h1>
+   </div>
+ 
 </body>
 </html>
